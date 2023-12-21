@@ -6,8 +6,10 @@
 	"license": "MIT",
 	"scripts": {
 		"start:ts": "tsc -w",
-		"start:mon": "nodemon './dist/index.js'",
-    "start:ins":"nodemon --inspect './dist/index.js'"
+		"start:mon": "nodemon ./dist/index.js",
+		"start:ins": "nodemon --inspect ./dist/index.js",
+		"build": "tsc",
+		"start": "node dist/index.js"
 	},
 	"dependencies": {},
 	"devDependencies": {
