@@ -1,15 +1,21 @@
 {
-  "name": "it_kamasutra_back_end",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:WebZap/it_kamasutra_back_end.git",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.10.5",
-    "express": "^4.18.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
-  }
+	"name": "it_kamasutra_back_end",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:WebZap/it_kamasutra_back_end.git",
+	"license": "MIT",
+	"scripts": {
+		"start:ts": "tsc -w",
+		"start:mon": "nodemon './dist/index.js'",
+    "start:ins":"nodemon --inspect './dist/index.js'"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/express": "^4.17.21",
+		"@types/node": "^20.10.5",
+		"express": "^4.18.2",
+		"nodemon": "^3.0.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.3.3"
+	}
 }
