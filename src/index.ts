@@ -5,6 +5,7 @@ import express from 'express'
 
 const app = express()
 const jsonMiddleWare = express.json()
+const port = process.env.PORT || 3000
 app.use(jsonMiddleWare)
 
 let db: IDb = {
@@ -74,6 +75,6 @@ app.put('/courses/:id', (req, res) => {
 	}
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
 	console.log('Server is started')
 })

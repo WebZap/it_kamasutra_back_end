@@ -7,6 +7,7 @@ const helpers_1 = require("./helpers");
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const jsonMiddleWare = express_1.default.json();
+const port = process.env.PORT || 3000;
 app.use(jsonMiddleWare);
 let db = {
     courses: [],
@@ -72,6 +73,6 @@ app.put('/courses/:id', (req, res) => {
         return;
     }
 });
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is started');
 });
